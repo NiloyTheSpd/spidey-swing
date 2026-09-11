@@ -1,0 +1,8 @@
+# Render previews / QC montages
+*.png
+!preview.png
+
+# Editor noise
+*.swp
+*~
+.DS_Store
