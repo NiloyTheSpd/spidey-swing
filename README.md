@@ -1,7 +1,25 @@
 # Spidey Swing 🕷️
 
-Miles Morales web-swinging through your Omarchy top bar. A third-party
-Quickshell bar widget: pendulum swing + travel drift, click for a somersault.
+Miles Morales web-swinging through your Omarchy top bar — a hand-drawn
+6-frame SVG swing cycle in the cursor's chibi style. Sharp at any DPI,
+including 4K. Click for a somersault.
+
+## The cycle
+
+`assets/frames/` holds one SVG per beat, cycled every 160ms:
+
+| Frame | Beat |
+|-------|------|
+| `frame0` | Web-shoot (crouch, firing the line) |
+| `frame1` | Launch (pushing off, stretched diagonal) |
+| `frame2` | Swing (horizontal, riding the line) |
+| `frame3` | Apex (tucked, both hands on) |
+| `frame4` | Dive (released, headfirst + speed lines) |
+| `frame5` | Land (superhero crouch, fist down) |
+
+On top of the frames: a ±8° pendulum sway, travel drift across a 190px
+slot (auto-mirrored so Miles faces his direction), and a click-triggered
+360° flip.
 
 ## Install
 
@@ -22,8 +40,8 @@ Plugin code hot-reloads on save. If a change doesn't appear,
 - **Click**: 360° somersault (600ms). Clicks work through the bar host's
   registered click-target contract (`triggerPress`), not a raw `MouseArea`.
 
-## Art credit
+## Art
 
-`assets/miles-swing.png` — Miles Morales swinging PNG via pngall.com,
-free for **personal use**. Keep this repo local; check the license before
-publishing the art anywhere public.
+All frames are original vector art drawn for this widget — no screenshots.
+Palette matches the Miles cursor + theme (`#1a1c24` suit, `#ff0000`
+webbing, `#ffffff` eyes, `#79adff` venom sparks).

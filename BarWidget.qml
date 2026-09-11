@@ -23,34 +23,43 @@ BarWidget {
     if (registeredBar && registeredBar.unregisterClickTarget) registeredBar.unregisterClickTarget(root)
   }
 
-  implicitWidth: 150
+  // Swing-cycle frame driver: shoot -> launch -> swing -> apex -> dive -> land.
+  property int frame: 0
+  Timer {
+    interval: 160
+    running: true
+    repeat: true
+    onTriggered: root.frame = (root.frame + 1) % 6
+  }
+
+  implicitWidth: 190
   implicitHeight: barSize
 
-  // Traveler: drifts Spidey back and forth through the navbar.
+  // Traveler: drifts Spidey back and forth through the navbar, facing travel.
   Item {
     id: traveler
-    width: 40
+    width: 44
     anchors.top: parent.top
     anchors.bottom: parent.bottom
 
     SequentialAnimation on x {
       loops: Animation.Infinite
       ScriptAction { script: spideyImg.mirror = false }
-      NumberAnimation { from: 0; to: 110; duration: 4200; easing.type: Easing.InOutSine }
+      NumberAnimation { from: 0; to: 146; duration: 5200; easing.type: Easing.InOutSine }
       ScriptAction { script: spideyImg.mirror = true }
-      NumberAnimation { from: 110; to: 0; duration: 4200; easing.type: Easing.InOutSine }
+      NumberAnimation { from: 146; to: 0; duration: 5200; easing.type: Easing.InOutSine }
     }
 
-    // Pendulum: pivots from the web anchor (top-right of the art).
+    // Pendulum: gentle sway on top of the per-frame poses.
     Item {
       id: swing
       anchors.fill: parent
-      transformOrigin: Item.TopRight
+      transformOrigin: Item.Top
 
       SequentialAnimation on rotation {
         loops: Animation.Infinite
-        NumberAnimation { from: -12; to: 12; duration: 1400; easing.type: Easing.InOutSine }
-        NumberAnimation { from: 12; to: -12; duration: 1400; easing.type: Easing.InOutSine }
+        NumberAnimation { from: -8; to: 8; duration: 1500; easing.type: Easing.InOutSine }
+        NumberAnimation { from: 8; to: -8; duration: 1500; easing.type: Easing.InOutSine }
       }
 
       // Flipper: somersaults on click, independent of swing + travel.
@@ -75,7 +84,7 @@ BarWidget {
           height: parent.height
           fillMode: Image.PreserveAspectFit
           smooth: true
-          source: "assets/miles-swing.png"
+          source: "assets/frames/frame" + root.frame + ".svg"
         }
       }
     }
