@@ -51,6 +51,17 @@ omarchy bar put thespd.spidey --section left
 Plugin code hot-reloads on save. If a change doesn't appear,
 `omarchy restart shell`.
 
+## Removal
+
+```bash
+omarchy plugin disable thespd.spidey
+omarchy plugin remove thespd.spidey
+```
+
+Disable removes it from the bar; remove deletes the checkout. No other
+files are touched. Only dependency is the Omarchy Quickshell shell
+itself — no services, no sudo, no network access.
+
 ## Controls
 
 - **Idle**: five staged keys (shoot → swing → dive → land → perch) with
