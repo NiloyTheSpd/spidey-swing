@@ -1,8 +1,10 @@
 # Spidey Swing 🕷️
 
 Miles Morales web-swinging through your Omarchy top bar — a hand-drawn
-6-frame SVG swing cycle in the cursor's chibi style. Sharp at any DPI,
-including 4K. Click for a somersault.
+5-frame SVG swing cycle in a chibi style. Vector art stays sharp at any
+DPI, including 4K. Click for a somersault.
+
+![Spidey Swing cycle](preview.png)
 
 ## The cycle
 
@@ -25,7 +27,21 @@ behind the black suit so it reads on dark bars, and exaggeration pushed
 
 ## Install
 
-Already lives at `~/.config/omarchy/plugins/thespd.spidey/`. To place it:
+Requires Omarchy with the Quickshell shell (Quattro).
+
+```bash
+omarchy plugin add https://github.com/NiloyTheSpd/spidey-swing.git --enable
+```
+
+Or from the AUR:
+
+```bash
+yay -S omarchy-spidey-swing
+# then:
+omarchy plugin add https://github.com/NiloyTheSpd/spidey-swing.git --enable
+```
+
+To place it manually:
 
 ```bash
 omarchy-shell shell rescanPlugins
@@ -37,8 +53,9 @@ Plugin code hot-reloads on save. If a change doesn't appear,
 
 ## Controls
 
-- **Idle**: swings ±12° on a 2.8s loop while drifting across its slot,
-  auto-mirroring at each end so Miles always faces travel direction.
+- **Idle**: five staged keys (shoot → swing → dive → land → perch) with
+  cinematic holds, drifting slowly across its slot and auto-mirroring at
+  each end so Miles always faces travel direction.
 - **Click**: 360° somersault (600ms). Clicks work through the bar host's
   registered click-target contract (`triggerPress`), not a raw `MouseArea`.
 
