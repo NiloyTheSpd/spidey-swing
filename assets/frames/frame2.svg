@@ -1,25 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
-  <!-- FRAME 2: SWING (horizontal, riding the line) -->
-  <path d="M188,58 L230,-10" stroke="#d6e9ff" stroke-width="5" stroke-linecap="round"/>
-  <path d="M102,136 L64,148 L40,140" stroke="#1a1c24" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M102,146 L68,162 L46,156" stroke="#1a1c24" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <rect x="26" y="133" width="26" height="13" rx="6.5" fill="#ff0000" transform="rotate(-10 39 139)"/>
-  <rect x="32" y="149" width="26" height="13" rx="6.5" fill="#ff0000" transform="rotate(-8 45 155)"/>
-  <ellipse cx="140" cy="140" rx="44" ry="26" fill="#1a1c24"/>
-  <path d="M104,132 Q140,144 176,132" stroke="#ff0000" stroke-width="2.5" fill="none"/>
-  <path d="M104,148 Q140,160 176,148" stroke="#ff0000" stroke-width="2.5" fill="none"/>
-  <path d="M132,150 L106,166 L94,158" stroke="#1a1c24" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M160,130 L176,92 L188,58" stroke="#1a1c24" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="188" cy="58" r="11" fill="#ff0000"/>
-  <g transform="translate(192,126) rotate(12)">
-    <circle cx="0" cy="0" r="28" fill="#1a1c24" stroke="#ff0000" stroke-width="3"/>
-    <g transform="translate(6,0)">
+  <!-- KEY 2: DIVE-STRETCH (streamlined headfirst dart) -->
+  <g stroke="#79adff" stroke-width="4" stroke-linecap="round" opacity="0.7">
+    <path d="M36,56 L92,112 M20,90 L76,146 M58,30 L114,86"/>
+  </g>
+  <path d="M150,136 L108,118 L82,130" stroke="#1a1c24" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M158,150 L118,140 L94,152" stroke="#1a1c24" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="82" cy="130" r="8" fill="#ff0000"/>
+  <circle cx="94" cy="152" r="8" fill="#ff0000"/>
+  <path d="M130,190 L102,224 L80,218" stroke="#1a1c24" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M146,192 L122,228 L102,222" stroke="#1a1c24" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="64" y="210" width="26" height="13" rx="6.5" fill="#ff0000" transform="rotate(16 77 216)"/>
+  <rect x="86" y="214" width="26" height="13" rx="6.5" fill="#ff0000" transform="rotate(16 99 220)"/>
+  <g transform="rotate(35 140 150)">
+    <ellipse cx="140" cy="150" rx="26" ry="50" fill="#1a1c24"/>
+    <path d="M118,130 Q140,142 162,130" stroke="#ff0000" stroke-width="2.5" fill="none"/>
+    <path d="M116,152 Q140,166 164,152" stroke="#ff0000" stroke-width="2.5" fill="none"/>
+  </g>
+  <g transform="translate(184,174) rotate(35)">
+    <circle cx="0" cy="0" r="30" fill="#1a1c24" stroke="#ff0000" stroke-width="3"/>
+    <g transform="translate(4,4)">
       <path d="M-26,-8 L-8,-14 L-12,10 L-28,2 Z" fill="#ffffff" stroke="#ff0000" stroke-width="4" stroke-linejoin="round"/>
       <path d="M26,-8 L8,-14 L12,10 L28,2 Z" fill="#ffffff" stroke="#ff0000" stroke-width="4" stroke-linejoin="round"/>
     </g>
   </g>
-  <g stroke="#79adff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6">
-    <path d="M30,108 Q50,140 34,172"/>
-    <path d="M14,102 Q40,140 20,180"/>
-  </g>
+  <circle cx="122" cy="78" r="3" fill="#79adff" opacity="0.8"/>
+  <circle cx="152" cy="58" r="2.5" fill="#79adff" opacity="0.8"/>
 </svg>

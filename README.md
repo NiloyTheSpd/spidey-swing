@@ -6,23 +6,22 @@ including 4K. Click for a somersault.
 
 ## The cycle
 
-`assets/frames/` holds one SVG per beat, with cinematic per-frame timing
-(slow anticipation, snappy action, hangtime, held impact, rest):
+`assets/frames/` holds one SVG per beat — five staged keys with
+maximally distinct silhouettes (squint test), long holds, and no
+competing motion. Slow anticipation, snappy action, held impact, rest:
 
 | Frame | Beat | Hold |
 |-------|------|------|
-| `frame0` | Web-shoot (crouch, firing the line) | 420ms |
-| `frame1` | Launch (pushing off, stretched diagonal) | 150ms |
-| `frame2` | Swing (horizontal, riding the line) | 150ms |
-| `frame3` | Apex (tucked, both hands on) | 320ms |
-| `frame4` | Dive (released, headfirst + speed lines) | 130ms |
-| `frame5` | Wall-run (sprinting down the building) | 170ms |
-| `frame6` | Land (superhero crouch, fist down) | 480ms |
-| `frame7` | Perch (gargoyle crouch, spider-sense tingling) | 520ms |
+| `frame0` | Web-shoot (crouch, firing the line) | 500ms |
+| `frame1` | Swing-big (fully stretched layout) | 220ms |
+| `frame2` | Dive-stretch (streamlined headfirst dart) | 160ms |
+| `frame3` | Land-squash (compressed wide, fist down) | 550ms |
+| `frame4` | Perch (gargoyle crouch, spider-sense tingling) | 600ms |
 
-On top of the frames: a ±7° pendulum sway, slow travel drift across a
-190px slot (auto-mirrored so Miles faces his direction), a 22s rooftop
-skyline parallax behind him, and a click-triggered 360° flip.
+Staging rules learned the hard way: one motion idea at a time (slow
+travel drift only — no sway, no parallax scenery), a separation glow
+behind the black suit so it reads on dark bars, and exaggeration pushed
+~30% past "about right" (stretched swing, squashed landing).
 
 ## Install
 

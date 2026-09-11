@@ -1,28 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
-  <!-- FRAME 4: DIVE (released the web, headfirst) -->
-  <g stroke="#79adff" stroke-width="4" stroke-linecap="round" opacity="0.7">
-    <path d="M40,60 L90,110 M24,92 L74,142 M60,36 L110,86"/>
+  <!-- FRAME 7: PERCH (gargoyle crouch, spider-sense tingling) -->
+  <g stroke="#79adff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M78,58 Q70,72 74,86"/>
+    <path d="M96,50 Q92,66 96,82"/>
+    <path d="M114,52 Q114,68 110,84"/>
   </g>
-  <path d="M152,138 L112,120 L86,130" stroke="#1a1c24" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M160,152 L122,142 L98,152" stroke="#1a1c24" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="86" cy="130" r="9" fill="#ff0000"/>
-  <circle cx="98" cy="152" r="9" fill="#ff0000"/>
-  <path d="M132,190 L100,220 L78,214" stroke="#1a1c24" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M150,192 L122,226 L102,220" stroke="#1a1c24" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <rect x="62" y="206" width="26" height="13" rx="6.5" fill="#ff0000" transform="rotate(18 75 212)"/>
-  <rect x="86" y="212" width="26" height="13" rx="6.5" fill="#ff0000" transform="rotate(18 99 218)"/>
-  <g transform="rotate(35 140 150)">
-    <ellipse cx="140" cy="150" rx="30" ry="44" fill="#1a1c24"/>
-    <path d="M114,132 Q140,144 166,132" stroke="#ff0000" stroke-width="2.5" fill="none"/>
-    <path d="M112,154 Q140,168 168,154" stroke="#ff0000" stroke-width="2.5" fill="none"/>
+  <rect x="0" y="210" width="256" height="46" fill="#101219"/>
+  <rect x="0" y="210" width="256" height="4" fill="#23262f"/>
+  <path d="M120,160 L105,195 L108,205" stroke="#1a1c24" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M125,200 L100,195 L95,210" stroke="#1a1c24" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M150,200 L165,195 L168,210" stroke="#1a1c24" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="81" y="202" width="26" height="13" rx="6.5" fill="#ff0000"/>
+  <rect x="155" y="202" width="26" height="13" rx="6.5" fill="#ff0000"/>
+  <ellipse cx="130" cy="170" rx="30" ry="36" fill="#1a1c24"/>
+  <path d="M104,154 Q130,166 156,154" stroke="#ff0000" stroke-width="2.5" fill="none"/>
+  <path d="M102,176 Q130,190 158,176" stroke="#ff0000" stroke-width="2.5" fill="none"/>
+  <g stroke="#ff0000" stroke-width="2.5" stroke-linecap="round">
+    <ellipse cx="122" cy="162" rx="5" ry="8" fill="#ff0000" stroke="none"/>
+    <path d="M117,158 L108,150 M117,163 L107,161 M117,168 L108,174 M127,158 L136,150 M127,163 L137,161 M127,168 L136,174" fill="none"/>
   </g>
-  <g transform="translate(182,172) rotate(35)">
+  <path d="M145,160 L120,185 L100,180" stroke="#1a1c24" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="100" cy="180" r="8" fill="#ff0000"/>
+  <g transform="translate(105,120) rotate(-10)">
     <circle cx="0" cy="0" r="30" fill="#1a1c24" stroke="#ff0000" stroke-width="3"/>
-    <g transform="translate(4,4)">
+    <g transform="translate(-6,0)">
       <path d="M-26,-8 L-8,-14 L-12,10 L-28,2 Z" fill="#ffffff" stroke="#ff0000" stroke-width="4" stroke-linejoin="round"/>
       <path d="M26,-8 L8,-14 L12,10 L28,2 Z" fill="#ffffff" stroke="#ff0000" stroke-width="4" stroke-linejoin="round"/>
     </g>
   </g>
-  <circle cx="120" cy="80" r="3" fill="#79adff" opacity="0.8"/>
-  <circle cx="150" cy="60" r="2.5" fill="#79adff" opacity="0.8"/>
 </svg>

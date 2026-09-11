@@ -23,62 +23,22 @@ BarWidget {
     if (registeredBar && registeredBar.unregisterClickTarget) registeredBar.unregisterClickTarget(root)
   }
 
-  // Swing-cycle frame driver with cinematic timing: slow anticipation,
-  // snappy action, hangtime at the apex, a held impact beat, and rest.
-  // shoot / launch / swing / apex / dive / wallrun / land / perch
+  // Five staged keys, one readable action each: shoot / swing / dive /
+  // land / perch. Long holds so every pose registers at bar size.
   property int frame: 0
-  readonly property var frameTime: [420, 150, 150, 320, 130, 170, 480, 520]
+  readonly property var frameTime: [500, 220, 160, 550, 600]
   Timer {
     interval: root.frameTime[root.frame]
     running: true
     repeat: true
-    onTriggered: root.frame = (root.frame + 1) % 8
+    onTriggered: root.frame = (root.frame + 1) % 5
   }
 
   implicitWidth: 190
   implicitHeight: barSize
 
-  // Rooftop skyline parallax drifting behind the action.
-  Item {
-    anchors.fill: parent
-    clip: true
-    Row {
-      anchors.bottom: parent.bottom
-      height: 26
-      spacing: 6
-      SequentialAnimation on x {
-        loops: Animation.Infinite
-        NumberAnimation { from: 0; to: -100; duration: 22000; easing.type: Easing.InOutSine }
-        NumberAnimation { from: -100; to: 0; duration: 22000; easing.type: Easing.InOutSine }
-      }
-      Repeater {
-        model: [
-          {w: 20, h: 12}, {w: 14, h: 20}, {w: 26, h: 10}, {w: 16, h: 24},
-          {w: 22, h: 14}, {w: 12, h: 18}, {w: 24, h: 11}, {w: 18, h: 22},
-          {w: 20, h: 12}, {w: 14, h: 20}, {w: 26, h: 10}, {w: 16, h: 24}
-        ]
-        Rectangle {
-          required property int index
-          required property var modelData
-          width: modelData.w
-          height: modelData.h
-          anchors.bottom: parent.bottom
-          color: "#0b0d13"
-          Rectangle {
-            width: 3
-            height: 4
-            x: 4
-            y: 4
-            color: "#e9bb4f"
-            opacity: 0.45
-            visible: (parent.index % 2) === 0
-          }
-        }
-      }
-    }
-  }
-
-  // Traveler: drifts Spidey back and forth through the navbar, facing travel.
+  // Traveler: slow drift through the navbar, facing travel direction.
+  // The only continuous motion — poses stay clean and readable.
   Item {
     id: traveler
     width: 44
@@ -88,47 +48,44 @@ BarWidget {
     SequentialAnimation on x {
       loops: Animation.Infinite
       ScriptAction { script: spideyImg.mirror = false }
-      NumberAnimation { from: 0; to: 146; duration: 7600; easing.type: Easing.InOutSine }
+      NumberAnimation { from: 0; to: 146; duration: 9000; easing.type: Easing.InOutSine }
       ScriptAction { script: spideyImg.mirror = true }
-      NumberAnimation { from: 146; to: 0; duration: 7600; easing.type: Easing.InOutSine }
+      NumberAnimation { from: 146; to: 0; duration: 9000; easing.type: Easing.InOutSine }
     }
 
-    // Pendulum: gentle sway on top of the per-frame poses.
-    Item {
-      id: swing
-      anchors.fill: parent
-      transformOrigin: Item.Top
+    // Separation glow: lifts the black suit off dark bars.
+    Image {
+      anchors.centerIn: parent
+      width: 96
+      height: 48
+      source: "assets/backdrop.svg"
+      smooth: true
+      opacity: 0.9
+    }
 
-      SequentialAnimation on rotation {
-        loops: Animation.Infinite
-        NumberAnimation { from: -7; to: 7; duration: 2100; easing.type: Easing.InOutSine }
-        NumberAnimation { from: 7; to: -7; duration: 2100; easing.type: Easing.InOutSine }
+    // Flipper: somersaults on click.
+    Item {
+      id: flipper
+      anchors.fill: parent
+      transformOrigin: Item.Center
+
+      NumberAnimation {
+        id: flipAnim
+        target: flipper
+        property: "rotation"
+        from: 0
+        to: 360
+        duration: 600
+        easing.type: Easing.InOutQuad
       }
 
-      // Flipper: somersaults on click, independent of swing + travel.
-      Item {
-        id: flipper
-        anchors.fill: parent
-        transformOrigin: Item.Center
-
-        NumberAnimation {
-          id: flipAnim
-          target: flipper
-          property: "rotation"
-          from: 0
-          to: 360
-          duration: 600
-          easing.type: Easing.InOutQuad
-        }
-
-        Image {
-          id: spideyImg
-          anchors.centerIn: parent
-          height: parent.height
-          fillMode: Image.PreserveAspectFit
-          smooth: true
-          source: "assets/frames/frame" + root.frame + ".svg"
-        }
+      Image {
+        id: spideyImg
+        anchors.centerIn: parent
+        height: parent.height
+        fillMode: Image.PreserveAspectFit
+        smooth: true
+        source: "assets/frames/frame" + root.frame + ".svg"
       }
     }
   }
