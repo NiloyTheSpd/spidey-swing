@@ -15,7 +15,7 @@ BarWidget {
   property var registeredBar: null
   function syncClickTarget() {
     if (registeredBar && registeredBar.unregisterClickTarget) registeredBar.unregisterClickTarget(root)
-    registeredBar = bar
+    registeredBar = root.bar
     if (registeredBar && registeredBar.registerClickTarget) registeredBar.registerClickTarget(root)
   }
   onBarChanged: syncClickTarget()
@@ -48,6 +48,8 @@ BarWidget {
   Repeater {
     model: 9
     Image {
+      required property int index
+      required property var frameOrder
       width: 1
       height: 1
       visible: false
@@ -56,7 +58,7 @@ BarWidget {
   }
 
   implicitWidth: 190
-  implicitHeight: barSize
+  implicitHeight: root.barSize
 
   // Traveler: slow drift through the navbar, facing travel direction.
   // GPU-only motion (x / y / rotation / scale / opacity) at 60fps.
@@ -162,7 +164,7 @@ BarWidget {
             height: parent.height
             fillMode: Image.PreserveAspectFit
             smooth: true
-            opacity: showA ? 1 : 0
+            opacity: root.showA ? 1 : 0
             Behavior on opacity { NumberAnimation { duration: 90; easing.type: Easing.OutCubic } }
           }
           Image {
@@ -171,7 +173,7 @@ BarWidget {
             height: parent.height
             fillMode: Image.PreserveAspectFit
             smooth: true
-            opacity: showA ? 0 : 1
+            opacity: root.showA ? 0 : 1
             Behavior on opacity { NumberAnimation { duration: 90; easing.type: Easing.OutCubic } }
           }
         }
