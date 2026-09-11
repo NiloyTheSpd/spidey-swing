@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="t4 d4">
-<title id="t4">Miles perched — gargoyle crouch, spider-sense</title>
-<desc id="d4">Athletic Miles in tight gargoyle perch on ledge, knees up, spider-sense tingling.</desc>
+<title id="t4">Miles blinks while perched — lids half-mast</title>
+<desc id="d4">Same perch as frame4 but mid-blink: lenses narrowed to slits, glint gone, sense lines dimmed.</desc>
 <defs>
 <linearGradient id="suit" x1="0.15" y1="0" x2="0.85" y2="1" color-interpolation="linearRGB"><stop offset="0" stop-color="#6f93e0"/><stop offset="0.18" stop-color="#273a61"/><stop offset="0.45" stop-color="#131a30"/><stop offset="0.72" stop-color="#0b1120"/><stop offset="0.88" stop-color="#253657"/><stop offset="1" stop-color="#4c6cab"/></linearGradient>
 <linearGradient id="red" x1="0" y1="0" x2="0.8" y2="1" color-interpolation="linearRGB"><stop offset="0" stop-color="#ffc6cd"/><stop offset="0.2" stop-color="#ff2236"/><stop offset="0.45" stop-color="#e62429"/><stop offset="0.75" stop-color="#a50e2c"/><stop offset="1" stop-color="#6d0a20"/></linearGradient>
@@ -8,7 +8,7 @@
 <radialGradient id="lens" cx="38%" cy="28%" r="75%" fx="30%" fy="20%" color-interpolation="linearRGB"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#f2f8ff"/><stop offset="0.62" stop-color="#b9d4ff"/><stop offset="0.85" stop-color="#6f8fd0"/><stop offset="1" stop-color="#42568c"/></radialGradient>
 <linearGradient id="ledge" x1="0" y1="0" x2="0" y2="1" color-interpolation="linearRGB"><stop offset="0" stop-color="#2b303c"/><stop offset="0.2" stop-color="#171a22"/><stop offset="1" stop-color="#0c0e13"/></linearGradient>
 </defs>
-<g id="sense" stroke="#79adff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85"><path d="M72 46 Q64 60 68 74"/><path d="M90 38 Q86 54 90 70"/><path d="M108 40 Q108 56 104 72"/></g>
+<g id="sense" stroke="#79adff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.45"><path d="M72 46 Q64 60 68 74"/><path d="M90 38 Q86 54 90 70"/><path d="M108 40 Q108 56 104 72"/></g>
 <g id="ledge"><rect x="0" y="210" width="256" height="46" fill="url(#ledge)"/><rect x="0" y="210" width="256" height="4" fill="#3a4a6a" opacity="0.8"/></g>
 <g id="shadow"><ellipse cx="128" cy="212" rx="62" ry="5" fill="#000" opacity="0.4"/></g>
 <g id="legs" stroke-linecap="round" stroke-linejoin="round"><path d="M118 152 L102 188 L106 200" fill="none" stroke="#3d5689" stroke-width="22"/><path d="M118 152 L102 188 L106 200" fill="none" stroke="url(#suit)" stroke-width="16"/><path d="M152 152 L168 188 L164 200" fill="none" stroke="#3d5689" stroke-width="22"/><path d="M152 152 L168 188 L164 200" fill="none" stroke="url(#suit)" stroke-width="16"/></g>
@@ -18,5 +18,5 @@
 <circle cx="124" cy="178" r="7.5" fill="#263a61"/>
 <g id="glove"><circle cx="101" cy="179" r="8.5" fill="url(#red)" stroke="#5c0d1d" stroke-width="1.6"/><path d="M94 176 Q101 173 108 176 M94 180 Q101 177 108 180 M95 184 Q101 182 107 184" fill="none" stroke="#4a0a14" stroke-width="1.1" stroke-linecap="round"/><path d="M96 174 L102 173" stroke="#ffdfe4" stroke-width="1.1" stroke-linecap="round" opacity="0.8"/></g>
 <path d="M104 146 Q98 164 104 182" stroke="#4d7cff" stroke-width="2.5" fill="none" opacity="0.7" stroke-linecap="round"/>
-<g id="head"><ellipse cx="106" cy="106" rx="25" ry="29" fill="#415c94"/><ellipse cx="106" cy="106" rx="22" ry="26" fill="url(#suit)" stroke="#0e1526" stroke-width="1.8"/><path d="M86 92 Q106 78 126 90" fill="none" stroke="#a1cbff" stroke-width="1.9" opacity="0.65" stroke-linecap="round"/><path d="M106 77 L106 135 M84 106 L128 106" fill="none" stroke="#cf2233" stroke-width="1.4" opacity="0.8" stroke-linecap="round"/><g transform="translate(100,106) rotate(-10)"><path d="M-31 -7 L-9 -17 L-12 13 L-32 3Z" fill="url(#lens)" stroke="#f5233d" stroke-width="2.4" stroke-linejoin="round"/><path d="M31 -7 L9 -17 L12 13 L32 3Z" fill="url(#lens)" stroke="#f5233d" stroke-width="2.4" stroke-linejoin="round"/></g><circle cx="92" cy="100" r="1.7" fill="#fff" opacity="0.9"/></g>
+<g id="head"><ellipse cx="106" cy="106" rx="25" ry="29" fill="#415c94"/><ellipse cx="106" cy="106" rx="22" ry="26" fill="url(#suit)" stroke="#0e1526" stroke-width="1.8"/><path d="M86 92 Q106 78 126 90" fill="none" stroke="#a1cbff" stroke-width="1.9" opacity="0.65" stroke-linecap="round"/><path d="M106 77 L106 135 M84 106 L128 106" fill="none" stroke="#cf2233" stroke-width="1.4" opacity="0.8" stroke-linecap="round"/><g id="lids" transform="translate(100,106) rotate(-10)"><path d="M-32 -4 L-10 -10 L-12 6 L-31 4Z" fill="url(#lens)" stroke="#f5233d" stroke-width="2.4" stroke-linejoin="round"/><path d="M32 -4 L10 -10 L12 6 L31 4Z" fill="url(#lens)" stroke="#f5233d" stroke-width="2.4" stroke-linejoin="round"/><path d="M-33 -5 L-9 -11 M9 -11 L33 -5" fill="none" stroke="#7d0f1e" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/></g></g>
 </svg>

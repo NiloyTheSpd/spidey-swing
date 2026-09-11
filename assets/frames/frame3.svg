@@ -1,49 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
-  <!-- KEY 3: LAND-SQUASH v2 — two hands only, soles hidden (face down) -->
-  <defs>
-    <linearGradient id="eg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#cfdefc"/>
-    </linearGradient>
-    <clipPath id="tClip"><path d="M112,140 C130,132 166,132 182,140 L174,184 C160,192 136,192 120,184 Z"/></clipPath>
-    <clipPath id="hClip"><circle cx="148" cy="104" r="30"/></clipPath>
-  </defs>
-  <ellipse cx="146" cy="247" rx="72" ry="6" fill="#000000" opacity="0.45"/>
-  <path d="M120,144 L92,170 L72,200 L82,206 L102,176 L130,152 Z" fill="#16181f"/>
-  <path d="M96,172 L84,186" stroke="#262b38" stroke-width="2"/>
-  <path d="M72,200 L60,206 L56,216 L64,222 L78,214 L84,204 Z" fill="#d81f2a"/>
-  <path d="M60,216 L52,222 M64,220 L58,228 M70,221 L66,230" stroke="#d81f2a" stroke-width="6" stroke-linecap="round"/>
-  <path d="M176,144 L184,185 L182,218 L194,218 L196,186 L188,146 Z" fill="#16181f"/>
-  <path d="M185,170 L187,190" stroke="#262b38" stroke-width="2"/>
-  <circle cx="188" cy="224" r="12" fill="#d81f2a"/>
-  <path d="M179,220 L197,220 M179,226 L197,226" stroke="#7d0f16" stroke-width="1.8"/>
-  <g stroke="#8a8f9e" stroke-width="3" stroke-linecap="round">
-    <path d="M162,240 L150,248 M214,240 L226,248 M188,242 L188,250"/>
-  </g>
-  <path d="M128,190 L96,198 L78,228 L90,232 L108,204 L138,196 Z" fill="#16181f"/>
-  <path d="M168,190 L200,198 L218,228 L206,232 L188,204 L158,196 Z" fill="#16181f"/>
-  <path d="M108,200 L96,214 M188,200 L200,214" stroke="#262b38" stroke-width="2"/>
-  <path d="M62,228 L96,228 L98,242 L64,242 Z" fill="#101216"/>
-  <path d="M200,228 L234,228 L232,242 L198,242 Z" fill="#101216"/>
-  <path d="M62,228 Q79,224 96,228 M200,228 Q217,224 234,228" stroke="#232838" stroke-width="2" fill="none"/>
-  <path d="M112,140 C130,132 166,132 182,140 L174,184 C160,192 136,192 120,184 Z" fill="#16181f"/>
-  <path d="M112,140 C124,136 138,134 150,135 L146,189 C136,190 127,188 120,184 Z" fill="#232838" opacity="0.55"/>
-  <g clip-path="url(#tClip)" stroke="#d21f2c" stroke-width="1.8" fill="none" opacity="0.95">
-    <path d="M147,134 L139,158 L133,184 M147,134 L147,160 L147,186 M147,134 L155,158 L161,184"/>
-    <path d="M113,150 Q147,162 181,150 M111,170 Q147,184 181,170"/>
-  </g>
-  <g stroke="#ff1e2d" stroke-width="3" stroke-linecap="round">
-    <ellipse cx="147" cy="158" rx="7" ry="11" fill="#ff1e2d" stroke="none"/>
-    <path d="M140,150 L129,140 M139,158 L127,156 M140,166 L131,174 M141,173 L137,184 M154,150 L165,140 M155,158 L167,156 M154,166 L163,174 M153,173 L157,184" fill="none"/>
-  </g>
-  <path d="M136,128 L160,128 L166,140 L132,140 Z" fill="#16181f"/>
-  <path d="M124,102 C124,82 136,70 149,70 C162,70 174,82 174,102 C174,120 163,132 150,132 C137,132 124,120 124,102 Z" fill="#16181f"/>
-  <g clip-path="url(#hClip)" stroke="#d21f2c" stroke-width="1.5" fill="none" opacity="0.9">
-    <path d="M148,70 L148,90 M134,72 L140,90 M162,72 L156,90 M124,94 Q148,104 172,94 M124,110 Q148,120 172,110"/>
-  </g>
-  <path d="M125,90 Q121,106 127,122" stroke="#4d7cff" stroke-width="3" fill="none" opacity="0.8" stroke-linecap="round"/>
-  <g transform="translate(148,102) rotate(2)">
-    <path d="M-31,-7 L-9,-17 L-12,13 L-32,3 Z" fill="url(#eg)" stroke="#d81f2a" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="M31,-7 L9,-17 L12,13 L32,3 Z" fill="url(#eg)" stroke="#d81f2a" stroke-width="2.5" stroke-linejoin="round"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="t3 d3">
+<title id="t3">Miles absorbs superhero landing — wide low crouch</title>
+<desc id="d3">Athletic Miles in low wide landing crouch, fists down, impact burst around.</desc>
+<defs>
+<linearGradient id="suit" x1="0.08" y1="0" x2="0.88" y2="1" color-interpolation="linearRGB"><stop offset="0" stop-color="#6f93e0"/><stop offset="0.18" stop-color="#273a61"/><stop offset="0.45" stop-color="#131a30"/><stop offset="0.72" stop-color="#0b1120"/><stop offset="0.88" stop-color="#253657"/><stop offset="1" stop-color="#4c6cab"/></linearGradient>
+<linearGradient id="red" x1="0.12" y1="0" x2="0.8" y2="1" color-interpolation="linearRGB"><stop offset="0" stop-color="#ffc6cd"/><stop offset="0.2" stop-color="#ff2236"/><stop offset="0.45" stop-color="#e62429"/><stop offset="0.75" stop-color="#a50e2c"/><stop offset="1" stop-color="#6d0a20"/></linearGradient>
+<linearGradient id="redD" x1="0" y1="0" x2="0" y2="1" color-interpolation="linearRGB"><stop offset="0" stop-color="#ff8595"/><stop offset="1" stop-color="#8d0f28"/></linearGradient>
+<radialGradient id="lens" cx="35%" cy="23%" r="76%" fx="28%" fy="17%" color-interpolation="linearRGB"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#f2f8ff"/><stop offset="0.62" stop-color="#b9d4ff"/><stop offset="0.85" stop-color="#6f8fd0"/><stop offset="1" stop-color="#42568c"/></radialGradient>
+<radialGradient id="impact" cx="50%" cy="50%" r="50%" color-interpolation="linearRGB"><stop offset="0" stop-color="#d7ebff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#71a6ff" stop-opacity="0.32"/><stop offset="1" stop-color="#4d7bc7" stop-opacity="0"/></radialGradient>
+<linearGradient id="sole" x1="0" y1="0" x2="0" y2="1" color-interpolation="linearRGB"><stop offset="0" stop-color="#343b4d"/><stop offset="1" stop-color="#0c0e13"/></linearGradient>
+</defs>
+<g id="impact-fx"><ellipse cx="129" cy="222" rx="106" ry="25" fill="url(#impact)" opacity="0.8"/><g fill="none" stroke-linecap="round"><path d="M31 213 L8 224 M54 220 L30 239 M199 219 L229 239 M215 211 L247 220" stroke="#77acff" stroke-width="4" opacity="0.76"/><path d="M46 208 L21 211 M213 207 L239 208" stroke="#dceeff" stroke-width="2.2" opacity="0.75"/><path d="M73 226 Q128 243 184 226" stroke="#86b7ff" stroke-width="2.5" opacity="0.58"/></g><ellipse cx="129" cy="226" rx="82" ry="8" fill="#141b33" opacity="0.6"/><ellipse cx="129" cy="223" rx="52" ry="4" fill="#7da6ef" opacity="0.2"/></g>
+<g id="legs" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M116 165 L85 184 L63 210" stroke="#3d5689" stroke-width="24"/><path d="M116 165 L85 184 L63 210" stroke="url(#suit)" stroke-width="18"/><path d="M151 165 L177 184 L198 210" stroke="#3d5689" stroke-width="24"/><path d="M151 165 L177 184 L198 210" stroke="url(#suit)" stroke-width="18"/></g>
+<circle cx="85" cy="184" r="9.5" fill="#232f52"/><circle cx="177" cy="184" r="9.5" fill="#232f52"/>
+<path d="M116 165 L85 184" stroke="#9bc8ff" stroke-width="1.5" opacity="0.45" fill="none"/>
+<g id="boots"><path d="M47 207 Q61 198 79 205 L86 216 Q76 226 54 222 Q46 217 47 207Z" fill="url(#red)" stroke="#5c0d1d" stroke-width="1.6"/><path d="M50 207 L76 205" stroke="#1a1c24" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/><path d="M51 216 L83 216" stroke="#dfe6f2" stroke-width="1.3" stroke-linecap="round" opacity="0.85"/><path d="M50 218 L84 218 L82 224 L52 224Z" fill="url(#sole)"/><path d="M57 212 L75 212" fill="none" stroke="#fff1f4" stroke-width="1.6" stroke-linecap="round"/><path d="M179 207 Q195 198 209 205 L216 216 Q205 226 184 222 Q177 217 179 207Z" fill="url(#red)" stroke="#5c0d1d" stroke-width="1.6"/><path d="M182 207 L206 205" stroke="#1a1c24" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/><path d="M183 216 L212 216" stroke="#dfe6f2" stroke-width="1.3" stroke-linecap="round" opacity="0.85"/><path d="M182 218 L213 218 L211 224 L184 224Z" fill="url(#sole)"/><path d="M188 212 L205 212" fill="none" stroke="#fff1f4" stroke-width="1.6" stroke-linecap="round"/></g>
+<g id="torso"><path d="M101 122 Q129 110 157 122 L173 164 Q154 181 128 181 Q103 181 86 160Z" fill="url(#suit)" stroke="#4e6ba3" stroke-width="2.5" stroke-linejoin="round"/><path d="M106 128 Q128 117 144 124 L139 174 Q116 170 95 157Z" fill="#8fb6f5" opacity="0.13"/><path d="M151 123 Q166 140 170 159 Q159 175 147 178 L140 124Z" fill="#060c19" opacity="0.55"/><path d="M101 122 Q129 110 157 122" fill="none" stroke="#a9cfff" stroke-width="1.7" opacity="0.6" stroke-linecap="round"/><path d="M102 146 Q128 137 157 146 M100 158 Q128 149 160 158" fill="none" stroke="#d21f2c" stroke-width="1.2" opacity="0.8"/><g fill="none" stroke="url(#redD)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M129 137 L129 164"/><path d="M129 143 L115 135 M129 149 L111 149 M129 155 L114 164"/><path d="M129 143 L143 135 M129 149 L148 149 M129 155 L145 164"/></g><ellipse cx="129" cy="147" rx="4.5" ry="7.5" fill="url(#red)" stroke="#5c0d1d" stroke-width="1"/></g>
+<g id="arms" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M105 135 L80 164 L63 197" stroke="#485f99" stroke-width="21"/><path d="M105 135 L80 164 L63 197" stroke="url(#suit)" stroke-width="15"/><path d="M154 135 L178 164 L194 197" stroke="#485f99" stroke-width="21"/><path d="M154 135 L178 164 L194 197" stroke="url(#suit)" stroke-width="15"/></g>
+<circle cx="80" cy="164" r="8.2" fill="#283c65"/><circle cx="178" cy="164" r="8.2" fill="#283c65"/>
+<g id="gloves"><path d="M54 189 Q65 182 76 189 L77 201 L68 210 L56 206 Q51 199 54 189Z" fill="url(#red)" stroke="#5c0d1d" stroke-width="1.6"/><path d="M59 190 L57 202 M65 188 L64 203 M71 190 L72 202" fill="none" stroke="#4a0a14" stroke-width="1.2" stroke-linecap="round"/><path d="M56 204 L68 205" stroke="#ffdfe4" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/><path d="M183 189 Q194 182 205 189 L206 201 L197 210 L185 206 Q180 199 183 189Z" fill="url(#red)" stroke="#5c0d1d" stroke-width="1.6"/><path d="M188 190 L187 202 M194 188 L195 203 M200 190 L202 202" fill="none" stroke="#4a0a14" stroke-width="1.2" stroke-linecap="round"/><path d="M187 204 L199 205" stroke="#ffdfe4" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/></g>
+<g id="head"><ellipse cx="129" cy="90" rx="26" ry="30" fill="#415c94"/><ellipse cx="129" cy="90" rx="23" ry="27" fill="url(#suit)" stroke="#0e1526" stroke-width="1.8"/><path d="M107 77 Q129 62 151 76" fill="none" stroke="#a2ccff" stroke-width="2" opacity="0.68" stroke-linecap="round"/><path d="M129 60 L129 120 M105 90 L153 90" fill="none" stroke="#cf2233" stroke-width="1.5" opacity="0.82" stroke-linecap="round"/><path d="M116 82 L126 76 L126 96 L112 92Z" fill="url(#lens)" stroke="#f5233d" stroke-width="2.6" stroke-linejoin="round"/><path d="M132 76 L142 82 L146 92 L132 96Z" fill="url(#lens)" stroke="#f5233d" stroke-width="2.6" stroke-linejoin="round"/><path d="M111 74 L128 80 M147 74 L130 80" fill="none" stroke="#7d0f1e" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/><circle cx="121" cy="83" r="1.8" fill="#fff" opacity="0.9"/></g>
 </svg>

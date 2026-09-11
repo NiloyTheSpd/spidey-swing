@@ -11,7 +11,7 @@
 </defs>
 <g id="speed" fill="none" stroke-linecap="round"><path d="M14 165 Q70 201 122 205" stroke="#537cc5" stroke-width="5" opacity="0.48"/><path d="M20 179 Q66 212 113 217" stroke="#8bbcff" stroke-width="2.4" opacity="0.62"/><path d="M30 193 Q59 216 88 224" stroke="#d4ebff" stroke-width="1.4" opacity="0.58"/></g>
 <ellipse cx="136" cy="229" rx="62" ry="6" fill="#141b33" opacity="0.28"/>
-<g id="rig" transform="rotate(-18 151 128)">
+<g id="rig" transform="rotate(-26 151 128) scale(0.97) translate(4,6)">
 <g id="legs" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M144 165 L111 183 L67 184" stroke="#3d5689" stroke-width="23"/><path d="M144 165 L111 183 L67 184" stroke="url(#suit)" stroke-width="17"/><path d="M159 165 L128 194 L83 208" stroke="#3d5689" stroke-width="23"/><path d="M159 165 L128 194 L83 208" stroke="url(#suit)" stroke-width="17"/></g>
 <circle cx="111" cy="183" r="9.5" fill="#232f52"/><circle cx="128" cy="194" r="9.5" fill="#232f52"/>
 <path d="M111 183 L67 184" stroke="#9bc8ff" stroke-width="1.5" opacity="0.5" fill="none"/>

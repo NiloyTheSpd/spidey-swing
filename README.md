@@ -8,17 +8,22 @@ DPI, including 4K. Click for a somersault.
 
 ## The cycle
 
-`assets/frames/` holds one SVG per beat — five staged keys with
-maximally distinct silhouettes (squint test), long holds, and no
-competing motion. Slow anticipation, snappy action, held impact, rest:
+`assets/frames/` holds one SVG per beat — five hero keys plus three
+in-between transitions with maximally distinct silhouettes (squint
+test), long holds, and no competing motion. Slow anticipation, snappy
+action, held impact, rest:
 
 | Frame | Beat | Hold |
 |-------|------|------|
-| `frame0` | Web-shoot (crouch, firing the line) | 500ms |
+| `frame0` | Web-shoot (crouch, firing the line) | 480ms |
+| `frame5` | Anticipate (deeper crouch, wind-up) | 160ms |
 | `frame1` | Swing-big (fully stretched layout) | 220ms |
+| `frame6` | Tuck (swing-to-dive gather) | 150ms |
 | `frame2` | Dive-stretch (streamlined headfirst dart) | 160ms |
-| `frame3` | Land-squash (compressed wide, fist down) | 550ms |
-| `frame4` | Perch (gargoyle crouch, spider-sense tingling) | 600ms |
+| `frame7` | Reach (dive-to-land extension) | 170ms |
+| `frame3` | Land-squash (compressed wide, fist down, impact squint) | 520ms |
+| `frame4` | Perch (gargoyle crouch, spider-sense tingling) | 420ms |
+| `frame8` | Perch-blink (lids half-mast, 140ms eye beat) | 140ms |
 
 Staging rules learned the hard way: one motion idea at a time (slow
 travel drift only — no sway, no parallax scenery), a separation glow
@@ -73,5 +78,5 @@ itself — no services, no sudo, no network access.
 ## Art
 
 All frames are original vector art drawn for this widget — no screenshots.
-Palette matches the Miles cursor + theme (`#1a1c24` suit, `#ff0000`
+Palette matches the Miles cursor + theme (`#131a30` suit, `#e62429`
 webbing, `#ffffff` eyes, `#79adff` venom sparks).

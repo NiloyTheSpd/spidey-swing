@@ -29,7 +29,7 @@
 <path d="M208 67 L256 8" stroke="#ffffff" stroke-width="1.2" opacity="0.85"/>
 <path d="M213 50 L224 38 M224 42 L224 25 M231 47 L244 38" stroke="#7fb5ff" stroke-width="3" opacity="0.9"/>
 </g>
-<g id="shadow"><ellipse cx="132" cy="232" rx="68" ry="8" fill="#141b33" opacity="0.5"/><ellipse cx="132" cy="229" rx="47" ry="4" fill="#6d88ba" opacity="0.22"/></g>
+<g id="anticipate" transform="translate(0,23) scale(1.04,0.9)"><g id="shadow"><ellipse cx="132" cy="232" rx="68" ry="8" fill="#141b33" opacity="0.5"/><ellipse cx="132" cy="229" rx="47" ry="4" fill="#6d88ba" opacity="0.22"/></g>
 <g id="legs" stroke-linecap="round" stroke-linejoin="round">
 <g id="leg-back" fill="none"><path d="M126 168 L100 190 L74 212" stroke="#3d5689" stroke-width="24"/><path d="M126 168 L100 190 L74 212" stroke="url(#suit)" stroke-width="18"/><path d="M100 190 L74 212" stroke="url(#suitD)" stroke-width="18" opacity="0.35"/></g>
 <g id="leg-front" fill="none"><path d="M152 168 L180 192 L203 210" stroke="#3d5689" stroke-width="24"/><path d="M152 168 L180 192 L203 210" stroke="url(#suit)" stroke-width="18"/></g>
@@ -91,4 +91,4 @@
 <circle cx="149" cy="80" r="1.5" fill="#ffffff" opacity="0.9"/>
 <path d="M122 97 L137 102 M143 102 L157 97" fill="none" stroke="#7d0f1e" stroke-width="1" opacity="0.7"/>
 </g>
-</svg>
+</g></svg>
