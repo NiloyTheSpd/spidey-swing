@@ -6,20 +6,23 @@ including 4K. Click for a somersault.
 
 ## The cycle
 
-`assets/frames/` holds one SVG per beat, cycled every 160ms:
+`assets/frames/` holds one SVG per beat, with cinematic per-frame timing
+(slow anticipation, snappy action, hangtime, held impact, rest):
 
-| Frame | Beat |
-|-------|------|
-| `frame0` | Web-shoot (crouch, firing the line) |
-| `frame1` | Launch (pushing off, stretched diagonal) |
-| `frame2` | Swing (horizontal, riding the line) |
-| `frame3` | Apex (tucked, both hands on) |
-| `frame4` | Dive (released, headfirst + speed lines) |
-| `frame5` | Land (superhero crouch, fist down) |
+| Frame | Beat | Hold |
+|-------|------|------|
+| `frame0` | Web-shoot (crouch, firing the line) | 420ms |
+| `frame1` | Launch (pushing off, stretched diagonal) | 150ms |
+| `frame2` | Swing (horizontal, riding the line) | 150ms |
+| `frame3` | Apex (tucked, both hands on) | 320ms |
+| `frame4` | Dive (released, headfirst + speed lines) | 130ms |
+| `frame5` | Wall-run (sprinting down the building) | 170ms |
+| `frame6` | Land (superhero crouch, fist down) | 480ms |
+| `frame7` | Perch (gargoyle crouch, spider-sense tingling) | 520ms |
 
-On top of the frames: a ±8° pendulum sway, travel drift across a 190px
-slot (auto-mirrored so Miles faces his direction), and a click-triggered
-360° flip.
+On top of the frames: a ±7° pendulum sway, slow travel drift across a
+190px slot (auto-mirrored so Miles faces his direction), a 22s rooftop
+skyline parallax behind him, and a click-triggered 360° flip.
 
 ## Install
 
