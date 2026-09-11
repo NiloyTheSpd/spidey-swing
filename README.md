@@ -1,8 +1,8 @@
 # Spidey Swing 🕷️
 
 Miles Morales web-swinging through your Omarchy top bar — a hand-drawn
-5-frame SVG swing cycle in a chibi style. Vector art stays sharp at any
-DPI, including 4K. Click for a somersault.
+9-frame SVG swing cycle in an athletic animated style. Vector art stays
+sharp at any DPI, including 4K. Click for a somersault.
 
 ![Spidey Swing cycle](preview.png)
 
@@ -69,8 +69,9 @@ itself — no services, no sudo, no network access.
 
 ## Controls
 
-- **Idle**: five staged keys (shoot → swing → dive → land → perch) with
-  cinematic holds, drifting slowly across its slot and auto-mirroring at
+- **Idle**: nine staged keys (shoot → swing → dive → land → perch,
+  plus body in-betweens and a perch-blink eye beat) with cinematic
+  holds, drifting slowly across its slot and auto-mirroring at
   each end so Miles always faces travel direction.
 - **Click**: 360° somersault (600ms). Clicks work through the bar host's
   registered click-target contract (`triggerPress`), not a raw `MouseArea`.

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="t0 d0">
-<title id="t0">Miles Morales fires web — realistic athletic crouch</title>
+<title id="t0">Miles Morales anticipation crouch before swing</title>
 <desc id="d0">Athletic Miles in black-red suit crouched low, right arm extended firing web upper-right.</desc>
 <defs>
 <linearGradient id="suit" x1="0.15" y1="0" x2="0.85" y2="1" color-interpolation="linearRGB">
@@ -27,7 +27,7 @@
 <g id="effects-behind" fill="none" stroke-linecap="round">
 <path d="M202 66 L252 0" stroke="url(#web)" stroke-width="5"/>
 <path d="M208 67 L256 8" stroke="#ffffff" stroke-width="1.2" opacity="0.85"/>
-<path d="M213 50 L224 38 M224 42 L224 25 M231 47 L244 38" stroke="#7fb5ff" stroke-width="3" opacity="0.9"/>
+<path d="M213 50 L224 38 M224 42 L224 25 M231 47 L244 38" stroke="#7fb5ff" stroke-width="3" opacity="0.9"/><path d="M202 58 L200 44 L206 34" fill="none" stroke="#79adff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/><path d="M202 58 L200 44 L206 34" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" opacity="0.85"/><circle cx="206" cy="61" r="3" fill="#e8f3ff" opacity="0.9"/><circle cx="206" cy="61" r="6.5" fill="none" stroke="#79adff" stroke-width="1.5" opacity="0.6"/>
 </g>
 <g id="anticipate" transform="translate(0,23) scale(1.04,0.9)"><g id="shadow"><ellipse cx="132" cy="232" rx="68" ry="8" fill="#141b33" opacity="0.5"/><ellipse cx="132" cy="229" rx="47" ry="4" fill="#6d88ba" opacity="0.22"/></g>
 <g id="legs" stroke-linecap="round" stroke-linejoin="round">
